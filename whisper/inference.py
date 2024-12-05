@@ -4,7 +4,7 @@ import numpy as np
 import torch
 
 setting = 'zshot' #[FT, zshot, FTMulti]
-dataset_name = 'COPAS' #[torgo, uaspeech, easycall, COPAS]
+dataset_name = 'COPAS' #[torgo, uaspeech, easycall, COPAS, All, All_balanced]
 model_name = 'openai/whisper-large-v3'
 split = 'test'
 language = 'dutch' #['english', 'italian', 'dutch']
