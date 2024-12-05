@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ### Finetuning
 **Whisper**
 
-1. Go to `./whisper/finetune.py`.
+1. Go to [whisper/finetune.py](./whisper/finetune.py)
 2. Change the variables at the beginning of the file if needed, e.g.
 ```
 dataset_name = 'COPAS' #['COPAS', 'easycall', 'torgo', 'uaspeech', 'All', 'All_balanced']
@@ -25,7 +25,7 @@ cache_dir = '/l/users/karima.kadaoui/.cache/huggingface'
 
 **MMS**
 
-1. Go to `./mms/finetune.py`.
+1. Go to [mms/finetune.py](./mms/finetune.py).
 2. Change the variables at the beginning of the file if needed, e.g.
 ```
 dataset_name = 'COPAS' #[torgo, uaspeech, easycall, COPAS, All, All_balanced]
@@ -39,7 +39,7 @@ cache_dir = '/l/users/karima.kadaoui/.cache/huggingface'
 ### Inference
 **Whisper**
 
-1. Go to `./whisper/inference.py`.
+1. Go to [whisper/inference.py](./whisper/inference.py)
 2. Change the variables at the beginning of the file if needed, e.g.
 ```
 setting = 'zshot' #[FT, zshot, FTMulti]
@@ -53,7 +53,7 @@ cache_dir = '/l/users/karima.kadaoui/.cache/huggingface'
 
 **MMS**
 
-1. Go to `./mms/inference.py`.
+1. Go to [mms/inference.py](./mms/inference.py).
 2. Change the variables at the beginning of the file if needed, e.g.
 ```
 model_name = 'facebook/mms-1b-all'
