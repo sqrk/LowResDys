@@ -7,7 +7,7 @@ from datasets import load_dataset, Audio
 from transformers import Seq2SeqTrainingArguments, Seq2SeqTrainer, AutoProcessor, AutoModelForSpeechSeq2Seq, TrainerCallback
 import pyarrow.dataset as ds
 
-dataset_name = 'COPAS' #['COPAS', 'easycall', 'torgo', 'uaspeech']
+dataset_name = 'COPAS' #['COPAS', 'easycall', 'torgo', 'uaspeech', 'All', 'All_balanced']
 model_name = 'openai/whisper-large-v3'
 output_dir = f"./{dataset_name}-whisper-lg-3"
 language = 'dutch' #['dutch', 'english', 'italian']
