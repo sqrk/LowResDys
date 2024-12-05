@@ -3,9 +3,22 @@
 ## Requirements
 Clone this repo and install dependencies:
 ```bash
-git clone https://github.com/Theehawau/OptimizingPretext.git
-cd OptimizingPretext
-pip install -r optimizepretext/requirements.txt
+git clone https://github.com/sqrk/LowResDys.git
+cd LowResDys
+pip install -r requirements.txt
+```
+
+## Scripts
+### Finetuning
+**Whisper**
+Go to `./whisper/finetune.py`.
+Change the variables at the beginning of the file if needed, e.g.
+```
+dataset_name = 'COPAS' #['COPAS', 'easycall', 'torgo', 'uaspeech']
+model_name = 'openai/whisper-large-v3'
+output_dir = f"./{dataset_name}-whisper-lg-3"
+language = 'dutch'
+cache_dir = '/l/users/karima.kadaoui/.cache/huggingface'
 ```
 
 
