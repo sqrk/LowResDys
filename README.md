@@ -1,5 +1,13 @@
 # LowResDys
 
+## Requirements
+Clone this repo and install dependencies:
+```bash
+git clone https://github.com/Theehawau/OptimizingPretext.git
+cd OptimizingPretext
+pip install -r optimizepretext/requirements.txt
+```
+
 
 ## Checkpoints
 | Dataset  | Whisper                                       | MMS                             |
