@@ -10,7 +10,7 @@ import pyarrow.dataset as ds
 dataset_name = 'COPAS' #['COPAS', 'easycall', 'torgo', 'uaspeech']
 model_name = 'openai/whisper-large-v3'
 output_dir = f"./{dataset_name}-whisper-lg-3"
-language = 'dutch'
+language = 'dutch' #['dutch', 'english', 'italian']
 cache_dir = '/l/users/karima.kadaoui/.cache/huggingface'
 print(f'Dataset: {dataset_name}\nModel: {model_name}\nOutput dir: {output_dir}')
 
