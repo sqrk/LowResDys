@@ -65,6 +65,18 @@ split = 'test'
 ```
 3. Run `python ./mms/inference.py`
 
+## Data
+The datasets are all uploaded to the following Hugginface dataset `https://huggingface.co/datasets/sqrk/dys_mixture`
+You can download a specific dataset using 
+```
+from datasets import load_dataset
+
+dataset = load_dataset("sqrk/dys_mixture", <dataset_name>)
+```
+where `dataset_name` can be any of `['COPAS', 'torgo', 'uaspeech', 'easycall', 'All', 'All_balanced']`
+
+The data does **not** need to be downloaded before running the finetuning/inference scripts. The scripts take care of that.
+
 ## Checkpoints
 | Dataset  | Whisper                                       | MMS                             |
 |----------|-----------------------------------------------|---------------------------------|
