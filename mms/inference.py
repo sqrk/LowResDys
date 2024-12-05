@@ -8,9 +8,9 @@ language = 'eng' #[eng, ita, nld]
 dataset_name = "COPAS" #[torgo, uaspeech, easycall, COPAS, All, All_balanced]
 setting = 'zshot' #[zshot, FT, FTMulti]
 model_name = f'sqrk/{dataset_name}-mms1ball'
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 split = 'test'
 
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(f'DATASET: {dataset_name}\nMODEL: {model_name}\nSETTING: {setting}\nSPLIT: {split}\nLANGUAGE: {language}')
 
 dataset = load_dataset(f'sqrk/dys_mixture', dataset_name, cache_dir='/l/users/karima.kadaoui/.cache/huggingface/datasets')
